@@ -1,0 +1,16 @@
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.Hero{
+    &__img{
+        background-image: url(https://www.mecojax.com/wp-content/uploads/2017/02/hero-image-placeholder-670x270.png);
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+}

@@ -1,0 +1,14 @@
+.Nav{
+    border-radius: 1rem;
+    background-color: grey;
+    &__Logo{
+        width:150px;
+        height:30px;
+    }
+    &__List{
+        padding-right: 50px;
+        &-link{
+            color: white;
+        }
+    }
+}
