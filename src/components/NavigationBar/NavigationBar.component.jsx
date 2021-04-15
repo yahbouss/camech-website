@@ -17,10 +17,10 @@ const NavigationBar = () =>{
                 <Navbar.Toggle expand="sm" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end Nav__List">
                         <Nav>
-                            <Nav.Link style={{color:'white'}} className='Nav__List-link'  href="#home">Home</Nav.Link>
-                            <Nav.Link style={{color:'white'}} className='Nav__List-link'  href="#link">Goals</Nav.Link>
-                            <Nav.Link style={{color:'white'}} className='Nav__List-link'  href="#link">Where to buy ?</Nav.Link>
-                            <Nav.Link style={{color:'white'}} className='Nav__List-link'  href="#link">Contact us</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#home">Home</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#link">Goals</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#link">Where to buy ?</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#link">Contact us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
             </Navbar>

@@ -1,13 +1,18 @@
 import './hero.scss'
-import { Container } from "react-bootstrap"
-
-const HeroPlaceholder = "https://www.mecojax.com/wp-content/uploads/2017/02/hero-image-placeholder-670x270.png"
+import hero from '../../shared/assets/Hero.jpg'
 
 const Hero = () =>{
     return(
-        <Container fluid className="Hero">
-            <img className="Hero__img" src={HeroPlaceholder} alt='Hero'/>
-        </Container>    
+        <div className="hero">
+            <div className="hero__img">
+                <img src={hero} alt='Hero-img'/>
+            </div>
+                <div className='hero__content'> 
+                    <button className="hero__content-btn">Where to buy ?</button>
+                        {/* <h1>Lorem ipsum dolor sit amet. </h1>
+                        <p className='hero__content-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus nemo facilis repudiandae sequi ducimus corporis quasi officia in repellat unde!</p> */}
+                </div>
+        </div>    
     )
 }
 
