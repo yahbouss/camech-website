@@ -8,6 +8,7 @@
        left: 0;
        width: 100%;
        height: 100%;
+       z-index: -1;
 
        &:before{
            content: '';
@@ -53,7 +54,7 @@
             border-color: transparent;
             cursor: pointer;
             transition: ease-in-out 0.2s;
-            z-index: 2;
+            z-index: 69;
             &:hover{
                 background-color: rgb(167, 167, 167);
             }

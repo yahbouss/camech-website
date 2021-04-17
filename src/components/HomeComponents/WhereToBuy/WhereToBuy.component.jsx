@@ -12,7 +12,7 @@ const WhereToBuy = () =>{
         <Container fluid='xl' className='buy'>
             <Row>
                 <Col lg='2'>
-                    <h1 className='buy__title'>WHERE<br/>TO BUY</h1>
+                    <h1 className='buy__title'>TO BUY<br/>WHERE</h1>
                 </Col>
                 <Col lg="3">
                     <Row>
@@ -33,18 +33,29 @@ const WhereToBuy = () =>{
                     </Row>    
                     <Row>
                         <Col lg='1'>
-                            <FaFacebookSquare className='icon'/>
+                            <FaFacebookSquare style={{fontSize:'28px'}} className='icon'/>
                         </Col>
                         <Col lg='3'>
-                            <button className='btn'>Follow</button>
+                            <a href='https://www.facebook.com/camech.upcycles'>
+                                <button className='btn'>Follow</button>
+                            </a>
                         </Col>
                         <Col lg='1'>
-                            <AiFillInstagram className='icon'/>
+                            <AiFillInstagram style={{fontSize:'30px'}} className='icon'/>
                         </Col>
                         <Col lg='3'>
-                            <button className='btn'>Follow</button>
+                            <a href='https://www.instagram.com/camech.upcycles'>
+                                <button className='btn'>Follow</button>
+                            </a>
                         </Col>
                     </Row>
+                </Col>
+                <Col lg='7'>
+                    <a href='https://www.barbecha.shop'>
+                        <button className='btn btn__big'>
+                            Visit our partner's website
+                        </button>
+                    </a>
                 </Col>
             </Row>
         </Container>
