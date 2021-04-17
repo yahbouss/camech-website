@@ -47,9 +47,16 @@
         &-btn{
             background-color: #fff;
             font-weight: 100;
-            padding: 17px 40px;
-            font-size: 50px;
+            padding: 10px 40px;
+            font-size: 39px;
             border-radius: 20px;
+            border-color: transparent;
+            cursor: pointer;
+            transition: ease-in-out 0.2s;
+            z-index: 2;
+            &:hover{
+                background-color: rgb(167, 167, 167);
+            }
         }
     }
 }

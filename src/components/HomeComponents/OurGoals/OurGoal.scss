@@ -1,0 +1,23 @@
+.goal{
+    padding: 70px 0px;
+    flex-flow: row wrap;
+    &__title{
+        writing-mode: vertical-rl;
+        font-size: 68px;
+        font-weight: 400;
+        margin: 0;
+        // float: right;
+    }
+    img{
+        //jawha behi
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+
+.warka{
+    display: flex;
+    float: right;
+    z-index: -1;
+}

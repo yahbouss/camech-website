@@ -1,0 +1,20 @@
+.product{
+    padding: 70px 0px;
+    flex-flow: row wrap;
+    &__title{
+        writing-mode: vertical-lr;
+        font-size: 68px;
+        font-weight: 400;
+        margin: 0;
+    }
+    &__card{
+        height: 500px; 
+        width: 200px;
+        align-items: center;
+        &-img{
+            height: 300px;
+            width: inherit;
+            object-fit: cover;
+        }
+    }
+}

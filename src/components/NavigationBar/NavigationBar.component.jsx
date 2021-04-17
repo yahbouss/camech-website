@@ -2,12 +2,13 @@ import './NavigationBar.scss'
 import { Container, Nav } from 'react-bootstrap'
 import Navbar from 'react-bootstrap/Navbar'
 import Logo from '../../shared/assets/Camech Logo.svg'
+import { Link, Route, Switch } from 'react-router-dom'
 
 const NavigationBar = () =>{
     return (
         <Container fluid="xl">
             <Navbar collapseOnSelec sticky="top" variant="dark" className='Nav'>
-                <Navbar.Brand href="#">
+                <Navbar.Brand as={Link} to="/" href="#">
                     <img 
                     src={Logo} 
                     alt='camech'
@@ -17,13 +18,19 @@ const NavigationBar = () =>{
                 <Navbar.Toggle expand="sm" aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end Nav__List">
                         <Nav>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#home">Home</Nav.Link>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#link">Goals</Nav.Link>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#link">Where to buy ?</Nav.Link>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="#link">Contact us</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/">Home</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/goals">Goals</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/wheretobuy">Where to buy ?</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/contactus">Contact us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
             </Navbar>
+            <Switch>
+                <Route exact path='/' />
+                <Route exact path='/goals' />
+                <Route exact path='/wheretobuy' />
+                <Route exact path='/contactus' />
+            </Switch>
         </Container>
     )
 }

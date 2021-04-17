@@ -1,13 +1,24 @@
 import './App.scss';
-import Hero from './components/Hero/Hero.component';
+import Footer from './components/Footer/Footer.component';
 import NavigationBar from './components/NavigationBar/NavigationBar.component'
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './pages/home'
+import Goals from './pages/goals'
+import ContactUs from './pages/contactus'
+import WhereToBuy from './pages/wheretobuy' 
 
 function App() {
   return (
-    <>
+    <Router>
       <NavigationBar/>
-      <Hero/>
-    </>
+      {/* router dom */}
+      <Route path='/wheretobuy' component={WhereToBuy}/>
+      <Route path='/goals' component={Goals}/>
+      <Route path='/contactus' component={ContactUs}/>
+      <Route exact path="/" component={Home}/>
+      {/* end router dom */}
+      <Footer/>
+    </Router>
   );
 }
 
