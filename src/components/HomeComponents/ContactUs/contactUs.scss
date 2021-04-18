@@ -1,0 +1,26 @@
+.form{
+    padding: 70px 0px;
+    flex-flow: row wrap;
+    &__message{
+        width: 100%;
+        height: 200px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        resize: none;
+    }
+}
+
+.btn-submit{
+    background: #343A40 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 100;
+    border-color: transparent;
+    padding: 5px 13px;
+    &:hover{
+        background-color: #232425;
+        color: #fff;
+    }
+}
