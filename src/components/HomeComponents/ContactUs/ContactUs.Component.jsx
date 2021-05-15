@@ -1,14 +1,23 @@
 import { Container, Form, Col } from 'react-bootstrap'
 import { useState } from 'react'
 import './contactUs.scss'
+import axios from 'axios'
+
+const api = axios.create({
+    baseURL:"http://localhost:5000/"
+})
 
 const ContactUs = () =>{
     const [Name, setName] = useState('')
     const [Email, setEmail] = useState('')
     const [Message, setMessage] = useState('')
 
-    const submitForm = () =>{
+    const submitForm = async () =>{
         console.log(Name + ' ' + Email + ' ' + Message)
+        api.post('/formSubmit', {Name, Email, Message})
+            .then(res=>{
+                console.log(res)
+            })
     }
 
     return (

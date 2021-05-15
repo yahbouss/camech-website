@@ -4,7 +4,7 @@ import NavigationBar from './components/NavigationBar/NavigationBar.component'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './pages/home'
 import Goals from './pages/goals'
-import ContactUs from './pages/contactus'
+import ContactUsPage from './pages/contactus'
 import WhereToBuy from './pages/wheretobuy' 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       {/* router dom */}
       <Route path='/wheretobuy' component={WhereToBuy}/>
       <Route path='/goals' component={Goals}/>
-      <Route path='/contactus' component={ContactUs}/>
+      <Route path='/contactus' component={ContactUsPage}/>
       <Route exact path="/" component={Home}/>
       {/* end router dom */}
       <Footer/>

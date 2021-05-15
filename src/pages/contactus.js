@@ -1,9 +1,16 @@
-const ContactUs = ()=>{
+import './contactus.scss'
+
+import WhereToBuy from '../components/HomeComponents/WhereToBuy/WhereToBuy.component'
+import ContactUs from '../components/HomeComponents/ContactUs/ContactUs.Component'
+
+const ContactUsPage = ()=>{
     return(
         <>
-            <h1>ContactUs</h1>
+            <h1 className='page-title'>ContactUs</h1>
+            <WhereToBuy/>
+            <ContactUs/>
         </>
     )
 }
 
-export default ContactUs
+export default ContactUsPage
