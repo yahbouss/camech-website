@@ -4,7 +4,7 @@ import './contactUs.scss'
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL:"http://localhost:5000/"
+    baseURL:"http://localhost:3001/"
 })
 
 const ContactUs = () =>{
@@ -14,10 +14,9 @@ const ContactUs = () =>{
 
     const submitForm = async () =>{
         console.log(Name + ' ' + Email + ' ' + Message)
-        api.post('/formSubmit', {Name, Email, Message})
-            .then(res=>{
+        api.post('/formSubmit', {Name, Email, Message}).then(res=>{
                 console.log(res)
-            })
+            }).catch(err=>console.log(err))
     }
 
     return (
