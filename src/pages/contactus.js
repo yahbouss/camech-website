@@ -6,7 +6,7 @@ import ContactUs from '../components/HomeComponents/ContactUs/ContactUs.Componen
 const ContactUsPage = ()=>{
     return(
         <>
-            <h1 className='page-title'>ContactUs</h1>
+            <h1 className='page-title'>Contact Us</h1>
             <WhereToBuy/>
             <ContactUs/>
         </>

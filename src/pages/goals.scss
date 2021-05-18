@@ -1,0 +1,43 @@
+.page-title{
+    font-size: 18vw;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: center;
+    flex-flow: row wrap;
+    margin: 50px 0px;
+
+    &__title{
+        writing-mode: vertical-lr;
+        font-size: 100px;
+        font-weight: 400;
+        margin: 0;
+    }
+    &__content{
+        width: 86%;
+        margin: 0 auto;
+        &-subtitle{
+            font-weight: 500;
+        }
+        &-text{
+
+        }
+        &-pics{
+            img{
+                width: 33%;
+                height: 150px;
+                object-fit: cover;
+                overflow: hidden;
+
+            }
+        }
+    }
+    
+}
