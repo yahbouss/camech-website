@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors')
+const dotenv = require('dotenv').config()
 const sendMailer = require('./mailer.js')
 
 const app = express()
@@ -14,8 +15,8 @@ app.get('/', (req,res)=>{
 app.post('/formSubmit', (req,res)=>{
     res.send("well recieved")
     console.log(req.body)
-    let message = { name: req.body.name, email: req.body.email, message: req.body.message}
-    sendMailer(req.body)
+    let message = { name: req.body.Name, email: req.body.Email, message: req.body.Message}
+    sendMailer(message)
 
 })
 

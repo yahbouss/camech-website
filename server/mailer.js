@@ -1,11 +1,9 @@
 const nodemailer = require('nodemailer')
-const dotenv = require('dotenv').config()
+
 
 const sendMailer= async (message)=>{
   let transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true, // true for 465, false for other ports
+    service: 'gmail',
     auth: {
       user: process.env.GMAIL, // generated ethereal user
       pass: process.env.GMAIL_PASSWORD, // generated ethereal password
@@ -13,15 +11,40 @@ const sendMailer= async (message)=>{
   });
 
   // send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: 'Camech <camech@smu.tn>', // sender address
-    to: "yahbouss@hotmail.fr",
-    subject: "test", // Subject line
-    text: `${message.name} with mail ${message.email} with message = ${message.message}`
-  });
+  await transporter.sendMail({
+    from: 'Caméch <camech@smu.tn>', // sender address
+    to: "enactus@smu.tn",
+    subject: "Contact Us form - Caméch, New Message !", // Subject line
+    text: `
+    You have recieved a new message from ${message.name} - ${message.email}
+    the message content: 
 
-  console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+    ${message.message}
+
+    Don't forget to reply to the mail
+
+    Best Regards,
+    Developer - Yahia Boussaid
+    `
+  }).catch(err =>console.log(err))
+
+  await transporter.sendMail({
+    from: 'Caméch <camech@smu.tn>', // sender address
+    to: message.email,
+    subject: "Thank you for contacting Caméch", // Subject line
+    text: `
+    Dear ${message.name},
+
+    Thank you for contacting Caméch! We will be sure that we recieved your message and we will get back to you soon
+
+    your message content:
+
+    ${message.message}
+
+    Best reagrds,
+    Yahia Boussaid - Head COM Enactus
+    `
+  }).catch(err =>console.log(err))
 }
 
 module.exports = sendMailer
