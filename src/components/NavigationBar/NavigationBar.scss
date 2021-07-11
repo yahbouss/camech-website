@@ -4,12 +4,13 @@
     // border-radius: 1rem;
     // background-color: grey;
     &__Logo{
-        width:150px;
-        height:30px;
+        width:115px;
+        height:48px;
     }
     &__List{
         &-link{
             font-weight: bold;
+            margin-left: 10px;
             // color: $green_color;
         }
     }

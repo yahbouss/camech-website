@@ -20,7 +20,7 @@ const NavigationBar = () =>{
                         <Nav>
                             <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/">Home</Nav.Link>
                             <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/goals">Goals</Nav.Link>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="http://barbecha.shop">Where to buy ?</Nav.Link>
+                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="http://barbecha.shop">Shop</Nav.Link>
                             <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/contactus">Contact us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
