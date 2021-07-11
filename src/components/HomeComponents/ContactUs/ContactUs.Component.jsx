@@ -38,7 +38,7 @@ const ContactUs = () =>{
                     <Form.Control
                     value={Email} 
                     type="email" 
-                    placeholder="Password"
+                    placeholder="email"
                     onChange={e => setEmail(e.target.value)} 
                     />
                     <Form.Text className="text-muted">
