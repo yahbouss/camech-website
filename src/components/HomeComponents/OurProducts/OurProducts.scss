@@ -2,6 +2,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0, 0.16);
     border: 1px solid #E0E0E0;
     border-radius: 2px;
+    min-width: 250px;
     &__img{
         position: relative;
         padding-bottom: 125%;
@@ -21,9 +22,11 @@
 
 .product{
     &__title{
-        writing-mode: vertical-lr;
         font-size: 68px;
         font-weight: 400;
         margin: 0;
+        @media screen and (min-width: 900px)   {
+            writing-mode: vertical-lr;
+        }
     }
 }

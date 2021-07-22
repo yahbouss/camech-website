@@ -7,7 +7,7 @@ import { Link, Route, Switch } from 'react-router-dom'
 const NavigationBar = () =>{
     return (
         <Container fluid="xl">
-            <Navbar collapseOnSelec sticky="top" variant="dark" className='Nav'>
+            <Navbar collapseOnSelect expand="lg" sticky="top" variant="dark" className='Nav'>
                 <Navbar.Brand as={Link} to="/" href="#">
                     <img 
                     src={Logo} 
@@ -15,15 +15,15 @@ const NavigationBar = () =>{
                     className="d-inline-block align-top Nav__Logo"
                     />
                 </Navbar.Brand>
-                <Navbar.Toggle expand="sm" aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end Nav__List">
-                        <Nav>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/">Home</Nav.Link>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/goals">Goals</Nav.Link>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="http://barbecha.shop">Shop</Nav.Link>
-                            <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/contactus">Contact us</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
+                <Navbar.Toggle variant="black" bg="white" aria-controls="responsive-navbar-nav"/>
+                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end Nav__List">
+                    <Nav>
+                        <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/">Home</Nav.Link>
+                        <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/goals">Goals</Nav.Link>
+                        <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="http://barbecha.shop">Shop</Nav.Link>
+                        <Nav.Link style={{color:'#2A9318'}} className='Nav__List-link'  href="/contactus">Contact us</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Navbar>
             <Switch>
                 <Route exact path='/' />

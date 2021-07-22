@@ -16,20 +16,22 @@ const WhereToBuy = () =>{
                 </Col>
                 <Col lg="3">
                     <Row>
-                        <h2 className="buy__subtitle">Contact info</h2>
-                        <p>
-                            <GrMail className='icon'/>
-                            Email: Enactus@smu.tn
-                        </p>
-                        <p>
-                            <FaPhoneAlt className='icon'/>
-                            phone: +216 50 995 229
-                        </p>
-                        <p>
-                            <IoMdPin className='icon'/>  
-                            Address: Les Berges du Lac II 
-                            Walkway, Tunis
-                        </p>
+                        <div className="boxy">
+                            <h2 className="buy__subtitle">Contact info</h2>
+                            <p>
+                                <GrMail className='icon'/>
+                                Email: Enactus@smu.tn
+                            </p>
+                            <p>
+                                <FaPhoneAlt className='icon'/>
+                                phone: +216 50 995 229
+                            </p>
+                            <p>
+                                <IoMdPin className='icon'/>
+                                Address: Les Berges du Lac II 
+                                Walkway, Tunis
+                            </p>
+                        </div>
                     </Row>    
                     <Row>
                         <Col lg='1'>
